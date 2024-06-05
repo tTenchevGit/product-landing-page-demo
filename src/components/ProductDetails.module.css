@@ -2,8 +2,9 @@
 .section {
     /* display: flex;
     flex-direction: column; */
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
+    margin: 10px;
   }
   
   .image {
@@ -18,10 +19,23 @@
   }
   
   .button {
-    padding: 10px 20px;
+    padding: 20px 50px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background: linear-gradient(45deg, #ff007f, #ff8c00);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.5), 0 0 20px rgba(255, 140, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 127, 1), 0 0 40px rgba(255, 140, 0, 1);
+    background: linear-gradient(45deg, #ff4d94, #ffa500);
   }
 
   .containerproduct1{
@@ -31,9 +45,9 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #282c34;
+    background-color: #282c3400;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
   }
   
