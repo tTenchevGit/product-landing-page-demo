@@ -1,12 +1,25 @@
+/* src/components/Header.module.css */
+.lightHeader {
+  padding: 20px;
+  text-align: center;
+  background-color: gray;
+  color: black;
+  position: relative; /* Ensure this is relative */
+}
 
-.header {
-    padding: 20px;
-    text-align: center;
-    background: #000000;
-    color: white;
-  }
-  
-  .title {
-    margin: 0;
-  }
-  
+.darkHeader {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  position: relative; /* Ensure this is relative */
+}
+
+.title {
+  margin: 0;
+}
+
+.toggleContainer {
+  position: relative;
+  height: 50px; /* Adjust as needed */
+}

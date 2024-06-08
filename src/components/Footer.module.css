@@ -1,9 +1,14 @@
 /* src/components/Footer.module.css */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #000000;
-    color: white;
-   
-  }
-  
+.lightFooter {
+  padding: 20px;
+  text-align: center;
+  background-color: gray;
+  color: black;
+}
+
+.darkFooter {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}

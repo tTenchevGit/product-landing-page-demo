@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './ProductDetails.module.css';
+import Modal from './Modal';
 
 
 const Product2 = () => {
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleButtonClick = () => {
+            setShowModal(true);
+    };
+
+    const handleCloseClick = () => {
+            setShowModal(false);
+    };
+
     return (
         <section className={styles.section}>
             
@@ -12,8 +24,10 @@ const Product2 = () => {
                 <p className={styles.description}>
                     Massage is a relaxing and therapeutic treatment that can be performed on the body, face, and hands. It can be performed on the body, face, and hands. It can be performed on the body, face, and hands. It can be performed on the body, face, and hands. It can be performed on the body, face, and hands. It can be performed on the body, face, and hands.
                 </p>
-                <button className={styles.button}>Buy Now</button>
+                <button  className={styles.button}  onClick={handleButtonClick}>Buy Now</button>
             </div>
+
+            <Modal show={showModal} onClose={handleCloseClick} > </Modal>
         </section>
     );
 };
